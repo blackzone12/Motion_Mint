@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MotionMint - The habit-first body transformation and workout architecture. Build customized fitness and atomic habit plans tailored to your specific obstacles and timeframe.">
+  <meta name="theme-color" content="#0a0d14">
+  <title>MotionMint — Habit-Driven Body & Fitness Transformation OS</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core & Feature Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/workout.css">
+  <link rel="stylesheet" href="css/onboarding.css">
+  <link rel="stylesheet" href="css/roadmap.css">
+  <link rel="stylesheet" href="css/analytics.css">
+  <link rel="stylesheet" href="css/foods.css">
+  <link rel="stylesheet" href="css/sessions.css">
+  <link rel="stylesheet" href="css/pdf.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Sticky Header -->
+    <header class="app-header" id="app-header">
+      <div class="brand-section">
+        <div class="brand-icon">🌿</div>
+        <span class="brand-title">MotionMint</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="main-nav">
+        <a href="#dashboard" class="nav-link active" data-view="dashboard" id="nav-dashboard">
+          <span>🎯</span>
+          <span>Dashboard</span>
+        </a>
+        <a href="#sessions" class="nav-link" data-view="sessions" id="nav-sessions">
+          <span>🏋️</span>
+          <span>Sessions</span>
+        </a>
+        <a href="#foods" class="nav-link" data-view="foods" id="nav-foods">
+          <span>🥗</span>
+          <span>Meals & Foods</span>
+        </a>
+        <a href="#roadmap" class="nav-link" data-view="roadmap" id="nav-roadmap">
+          <span>🗺️</span>
+          <span>Roadmap</span>
+        </a>
+        <a href="#analytics" class="nav-link" data-view="analytics" id="nav-analytics">
+          <span>📈</span>
+          <span>Analytics</span>
+        </a>
+        <a href="#coach" class="nav-link" data-view="coach" id="nav-coach">
+          <span>🧠</span>
+          <span>Reset Coach</span>
+        </a>
+        <a href="#profile" class="nav-link" data-view="profile" id="nav-profile">
+          <span>👤</span>
+          <span>Profile</span>
+        </a>
+      </nav>
+
+      <!-- Header Actions & PDF Download -->
+      <div class="header-stats">
+        <button class="btn-outline-small" id="btn-open-pdf" title="View & Download 7-Page Transformation Blueprint PDF" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.4); color: #34d399; font-weight: 700;">
+          📄 7-Page PDF
+        </button>
+
+        <div class="streak-badge" title="Consecutive Habit Consistency Streak">
+          <span>🔥</span>
+          <span id="header-streak-num">1</span>
+        </div>
+
+        <div class="level-badge" title="Current Architect Level & XP Progress">
+          <span class="level-text" id="header-level-num">Lvl 1</span>
+          <div class="xp-progress-track">
+            <div class="xp-progress-bar" id="header-xp-bar" style="width: 40%"></div>
+          </div>
+        </div>
+
+        <button class="header-action-btn" id="btn-toggle-sound" title="Toggle Sound FX">🔊</button>
+        <button class="header-action-btn" id="btn-replan" title="Create New Plan">✨</button>
+      </div>
+    </header>
+
+    <!-- Main View Container -->
+    <main class="main-content" id="main-content">
+      <!-- Dynamic Views Rendered Here via JS -->
+    </main>
+
+    <!-- Live Workout Player Overlay Container -->
+    <div id="workout-overlay-container"></div>
+  </div>
+
+  <!-- Inbuild Floating Scroll Controller (Up Arrow & Down Arrow) -->
+  <aside class="inbuild-scroll-controller" id="inbuild-scroll-controller" aria-label="Page scroll navigation">
+    <button type="button" class="btn-scroll-arrow btn-scroll-up" id="btn-scroll-top" title="Scroll to Top (Up Arrow)" aria-label="Scroll to top">
+      ▲
+    </button>
+    <button type="button" class="btn-scroll-arrow btn-scroll-down" id="btn-scroll-bottom" title="Scroll to Bottom (Down Arrow)" aria-label="Scroll to bottom">
+      ▼
+    </button>
+  </aside>
+
+  <!-- Main ES Module Script -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
