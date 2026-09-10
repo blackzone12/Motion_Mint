@@ -95,19 +95,6 @@ Right-click `index.html` inside VS Code and select **"Open with Live Server"**.
 
 ---
 
-## 🧪 Running the Test Suite
-
-MotionMint includes an in-browser automated test runner:
-1. Open `http://localhost:8080/tests/runner.html` in your browser.
-2. The runner will automatically execute all **45 test specifications**:
-   - ✅ BMR & TDEE Calculations & Safety Floors
-   - ✅ NLP Custom Goal Parsing & Problem Detection
-   - ✅ 5-Exercise / 3-Set Daily Routine & Rotation Architecture
-   - ✅ 1,000+ Exercise Database Verification & Zero Collision IDs
-   - ✅ Offline Multi-Engine Persistence & Corrupt JSON Resilience
-   - ✅ 7-Page Blueprint PDF Document Integrity
-
----
 
 ## 📂 Project Structure
 
