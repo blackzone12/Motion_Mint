@@ -132,9 +132,7 @@ MotionMint/
 │       ├── foods.js             # Whole-Food Database & Meal Synthesizer
 │       ├── presets.js           # Goals, Obstacle Antidotes & Timeframes
 │       └── custom-goal-engine.js# NLP Custom Goal Extraction Engine
-└── tests/
-    ├── runner.html              # Interactive Automated Test Suite GUI
-    └── test-suite.js            # 45 Comprehensive Unit & Integration Tests
+
 ```
 
 ---
